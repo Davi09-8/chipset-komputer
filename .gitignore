@@ -1,0 +1,58 @@
+# --- Yii Console & Tests ---
+/yii
+/yii_test
+/yii_test.bat
+
+# --- IDE Files (Optional tapi bagus) ---
+.idea
+nbproject
+.buildpath
+.project
+.settings
+.vscode
+
+# --- OS Files ---
+Thumbs.db
+.DS_Store
+
+# --- Composer & Vendor ---
+/vendor
+composer.phar
+
+# --- PHPUnit ---
+phpunit.phar
+/phpunit.xml
+
+# --- Vagrant ---
+/.vagrant
+
+# --- Local Configs (PASSWORD DATABASE) - JANGAN DIHAPUS ---
+/common/config/main-local.php
+/common/config/params-local.php
+/frontend/config/main-local.php
+/frontend/config/params-local.php
+/backend/config/main-local.php
+/backend/config/params-local.php
+/console/config/main-local.php
+/console/config/params-local.php
+
+# --- Runtime & Assets (Cache/Logs) ---
+/backend/web/assets/*
+!/backend/web/assets/.gitignore
+/backend/runtime/*
+!/backend/runtime/.gitignore
+/frontend/web/assets/*
+!/frontend/web/assets/.gitignore
+/frontend/runtime/*
+!/frontend/runtime/.gitignore
+/console/runtime/*
+!/console/runtime/.gitignore
+
+# --- Generated Files (Dibuat oleh php init) ---
+/frontend/web/index.php
+/frontend/web/index-test.php
+/frontend/web/robots.txt
+/backend/web/index.php
+/backend/web/index-test.php
+/backend/web/robots.txt
+/common/config/test-local.php

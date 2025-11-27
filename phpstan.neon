@@ -1,0 +1,26 @@
+includes:
+  - vendor/phpstan/phpstan/conf/bleedingEdge.neon
+
+parameters:
+  paths:
+    - common
+    - frontend
+    - backend
+    - console
+  excludes_analyse:
+    - vendor
+    - frontend/runtime
+    - backend/runtime
+    - console/runtime
+    - **/tests/**
+    - **/*_generated/**
+  inferPrivatePropertyTypeFromConstructor: true
+  checkMissingIterableValueType: false
+  checkGenericClassInNonGenericObjectType: false
+  treatPhpDocTypesAsCertain: false
+  ignoreErrors:
+    - '#Call to an undefined static method Yii::(getAlias|setAlias|powered)\.#'
+    - '#Class yii\\\\web\\\\Response referenced with incorrect case#'
+    - '#Ternary operator condition is always true#'
+    - '#Negated boolean expression is always false#'
+    - '#Call to function is_string\(\) with non-falsy-string will always evaluate to true#'

@@ -1,0 +1,171 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Negated boolean expression is always false\\.$#"
+			count: 1
+			path: backend/config/main-local.php
+
+		-
+			message: "#^Ternary operator condition is always true\\.$#"
+			count: 1
+			path: backend/config/main.php
+
+		-
+			message: "#^Call to an undefined static method Yii\\:\\:getAlias\\(\\)\\.$#"
+			count: 3
+			path: backend/controllers/ProdukController.php
+
+		-
+			message: "#^PHPDoc tag @throws with type backend\\\\tests\\\\_generated\\\\ModuleException is not subtype of Throwable$#"
+			count: 1
+			path: backend/tests/_support/FunctionalTester.php
+
+		-
+			message: "#^Parameter \\#1 \\$content of static method yii\\\\helpers\\\\BaseHtml\\:\\:encode\\(\\) expects string, int given\\.$#"
+			count: 1
+			path: backend/views/kategori/view.php
+
+		-
+			message: "#^Property yii\\\\web\\\\View\\:\\:\\$title \\(string\\) does not accept int\\.$#"
+			count: 1
+			path: backend/views/kategori/view.php
+
+		-
+			message: "#^Access to an undefined property yii\\\\web\\\\IdentityInterface\\:\\:\\$username\\.$#"
+			count: 1
+			path: backend/views/layouts/main.php
+
+		-
+			message: "#^Call to an undefined static method Yii\\:\\:powered\\(\\)\\.$#"
+			count: 1
+			path: backend/views/layouts/main.php
+
+		-
+			message: "#^Parameter \\#1 \\$content of static method yii\\\\helpers\\\\BaseHtml\\:\\:encode\\(\\) expects string, int given\\.$#"
+			count: 1
+			path: backend/views/metode-pembayaran/view.php
+
+		-
+			message: "#^Property yii\\\\web\\\\View\\:\\:\\$title \\(string\\) does not accept int\\.$#"
+			count: 1
+			path: backend/views/metode-pembayaran/view.php
+
+		-
+			message: "#^Parameter \\#1 \\$content of static method yii\\\\helpers\\\\BaseHtml\\:\\:encode\\(\\) expects string, int given\\.$#"
+			count: 1
+			path: backend/views/pesanan/view.php
+
+		-
+			message: "#^Property yii\\\\web\\\\View\\:\\:\\$title \\(string\\) does not accept int\\.$#"
+			count: 1
+			path: backend/views/pesanan/view.php
+
+		-
+			message: "#^Parameter \\#1 \\$content of static method yii\\\\helpers\\\\BaseHtml\\:\\:encode\\(\\) expects string, int given\\.$#"
+			count: 1
+			path: backend/views/produk/view.php
+
+		-
+			message: "#^Property yii\\\\web\\\\View\\:\\:\\$title \\(string\\) does not accept int\\.$#"
+			count: 1
+			path: backend/views/produk/view.php
+
+		-
+			message: "#^Call to an undefined static method Yii\\:\\:setAlias\\(\\)\\.$#"
+			count: 4
+			path: common/config/bootstrap.php
+
+		-
+			message: "#^Property common\\\\models\\\\User\\:\\:\\$password_reset_token \\(string\\) does not accept null\\.$#"
+			count: 1
+			path: common/models/User.php
+
+		-
+			message: "#^Negated boolean expression is always false\\.$#"
+			count: 1
+			path: frontend/config/main-local.php
+
+		-
+			message: "#^Ternary operator condition is always true\\.$#"
+			count: 1
+			path: frontend/config/main.php
+
+		-
+			message: "#^Class yii\\\\web\\\\Response referenced with incorrect case\\: Yii\\\\web\\\\Response\\.$#"
+			count: 1
+			path: frontend/controllers/SiteController.php
+
+		-
+			message: "#^Ternary operator condition is always true\\.$#"
+			count: 1
+			path: frontend/controllers/SiteController.php
+
+		-
+			message: "#^Method frontend\\\\models\\\\SignupForm\\:\\:signup\\(\\) should return bool but returns null\\.$#"
+			count: 1
+			path: frontend/models/SignupForm.php
+
+		-
+			message: "#^PHPDoc tag @throws with type frontend\\\\tests\\\\_generated\\\\ModuleException is not subtype of Throwable$#"
+			count: 1
+			path: frontend/tests/_support/FunctionalTester.php
+
+		-
+			message: "#^Call to method amOnRoute\\(\\) on an unknown class frontend\\\\tests\\\\AcceptanceTester\\.$#"
+			count: 1
+			path: frontend/tests/acceptance/HomeCest.php
+
+		-
+			message: "#^Call to method click\\(\\) on an unknown class frontend\\\\tests\\\\AcceptanceTester\\.$#"
+			count: 1
+			path: frontend/tests/acceptance/HomeCest.php
+
+		-
+			message: "#^Call to method see\\(\\) on an unknown class frontend\\\\tests\\\\AcceptanceTester\\.$#"
+			count: 2
+			path: frontend/tests/acceptance/HomeCest.php
+
+		-
+			message: "#^Call to method seeLink\\(\\) on an unknown class frontend\\\\tests\\\\AcceptanceTester\\.$#"
+			count: 1
+			path: frontend/tests/acceptance/HomeCest.php
+
+		-
+			message: "#^Call to method wait\\(\\) on an unknown class frontend\\\\tests\\\\AcceptanceTester\\.$#"
+			count: 1
+			path: frontend/tests/acceptance/HomeCest.php
+
+		-
+			message: "#^Parameter \\$I of method frontend\\\\tests\\\\acceptance\\\\HomeCest\\:\\:checkHome\\(\\) has invalid type frontend\\\\tests\\\\AcceptanceTester\\.$#"
+			count: 1
+			path: frontend/tests/acceptance/HomeCest.php
+
+		-
+			message: "#^Access to an undefined property frontend\\\\tests\\\\unit\\\\models\\\\ContactFormTest\\:\\:\\$tester\\.$#"
+			count: 2
+			path: frontend/tests/unit/models/ContactFormTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$content of static method yii\\\\helpers\\\\BaseHtml\\:\\:encode\\(\\) expects string, int given\\.$#"
+			count: 1
+			path: frontend/views/checkout/sukses.php
+
+		-
+			message: "#^Access to an undefined property yii\\\\web\\\\IdentityInterface\\:\\:\\$username\\.$#"
+			count: 1
+			path: frontend/views/layouts/main.php
+
+		-
+			message: "#^Call to an undefined static method Yii\\:\\:powered\\(\\)\\.$#"
+			count: 1
+			path: frontend/views/layouts/main.php
+
+		-
+			message: "#^Call to an undefined static method Yii\\:\\:getAlias\\(\\)\\.$#"
+			count: 1
+			path: frontend/views/produk/view.php
+
+		-
+			message: "#^Call to an undefined static method Yii\\:\\:getAlias\\(\\)\\.$#"
+			count: 1
+			path: frontend/views/site/index.php
